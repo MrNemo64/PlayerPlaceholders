@@ -1,0 +1,9 @@
+main: me.nemo_64.PlayerPlaceholders
+name: PlayerPlaceholders
+version: 1.0
+description: A plugin to define placeholders for players
+api-version: 1.17
+author: Nemo_64
+website: https://github.com/MrNemo64/PlayerPlaceholders
+softdepend:
+  - PlaceholderAPI
