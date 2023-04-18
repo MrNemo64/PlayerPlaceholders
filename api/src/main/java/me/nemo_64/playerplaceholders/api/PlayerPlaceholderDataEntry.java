@@ -12,6 +12,10 @@ public interface PlayerPlaceholderDataEntry<T> {
 
     Optional<T> getDefault();
 
+    String onRequest(String params);
+
     JsonElement serialize();
+
+    PlayerPlaceholderDataKey key();
 
 }

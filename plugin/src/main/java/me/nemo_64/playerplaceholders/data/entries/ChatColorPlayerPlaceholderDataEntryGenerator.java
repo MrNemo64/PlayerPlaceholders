@@ -1,4 +1,4 @@
-package me.playerplaceholders.data.entries;
+package me.nemo_64.playerplaceholders.data.entries;
 
 import com.google.gson.JsonElement;
 import me.nemo_64.playerplaceholders.api.PlayerPlaceholderDataGenerator;

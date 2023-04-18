@@ -1,7 +1,7 @@
-package me.playerplaceholders.papi;
+package me.nemo_64.playerplaceholders.papi;
 
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
-import me.playerplaceholders.PlayerPlaceholdersPlugin;
+import me.nemo_64.playerplaceholders.PlayerPlaceholdersPlugin;
 import org.bukkit.OfflinePlayer;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -18,6 +18,7 @@ public class PlayerPlaceholderExpansion extends PlaceholderExpansion {
     public @Nullable String onRequest(OfflinePlayer player, @NotNull String params) {
         if(player == null)
             return null;
+
         return "";
     }
 

@@ -1,10 +1,11 @@
-package me.playerplaceholders;
+package me.nemo_64.playerplaceholders;
 
 import me.nemo_64.playerplaceholders.api.PlayerPlaceholders;
-import me.playerplaceholders.data.PlayerDataFileAccessor;
-import me.playerplaceholders.data.PlayerPlaceholderDataEntriesRegistryImpl;
-import me.playerplaceholders.data.PlayerPlaceholderManagerImpl;
-import me.playerplaceholders.data.entries.ChatColorPlayerPlaceholderDataEntryGenerator;
+import me.nemo_64.playerplaceholders.data.PlayerDataFileAccessor;
+import me.nemo_64.playerplaceholders.data.PlayerPlaceholderManagerImpl;
+import me.nemo_64.playerplaceholders.data.entries.ChatColorPlayerPlaceholderDataEntryGenerator;
+import me.nemo_64.playerplaceholders.papi.PlayerPlaceholderExpansion;
+import me.nemo_64.playerplaceholders.data.PlayerPlaceholderDataEntriesRegistryImpl;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -26,7 +27,7 @@ public class PlayerPlaceholdersPlugin extends JavaPlugin implements PlayerPlaceh
         if(Bukkit.getPluginManager().getPlugin("PlaceholderAPI") == null)  {
             getLogger().info("Could not find PlaceholderAPI, placeholders will not work but you may still use the plugin.");
         } else {
-
+            new PlayerPlaceholderExpansion(this).register();
         }
     }
 

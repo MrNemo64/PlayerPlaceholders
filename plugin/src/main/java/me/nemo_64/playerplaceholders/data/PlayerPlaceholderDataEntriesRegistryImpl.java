@@ -1,4 +1,4 @@
-package me.playerplaceholders.data;
+package me.nemo_64.playerplaceholders.data;
 
 import me.nemo_64.playerplaceholders.api.PlayerPlaceholderDataEntriesRegistry;
 import me.nemo_64.playerplaceholders.api.PlayerPlaceholderDataGenerator;
@@ -29,8 +29,14 @@ public class PlayerPlaceholderDataEntriesRegistryImpl implements PlayerPlacehold
     }
 
     @Override
-    public Optional<PlayerPlaceholderDataGenerator<?>> getGenerator(String identifier) {
+    public Optional<PlayerPlaceholderDataGenerator<?>> getGeneratorByIdentifier(String identifier) {
         return Optional.of(generators.get(Objects.requireNonNull(identifier, "identifier")));
+    }
+
+    @Override
+    public Optional<PlayerPlaceholderDataGenerator<?>> getGeneratorByPlaceholder(String placeholder) {
+        return generators.values().stream()
+                .filter(generator -> generator.);
     }
 
     @Override
