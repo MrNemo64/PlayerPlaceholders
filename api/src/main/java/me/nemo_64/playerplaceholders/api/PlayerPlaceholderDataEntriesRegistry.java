@@ -8,7 +8,8 @@ public interface PlayerPlaceholderDataEntriesRegistry {
 
     void forceRegisterGenerator(PlayerPlaceholderDataGenerator<?> generator);
 
-    Optional<PlayerPlaceholderDataGenerator<?>> getGenerator(String identifier);
+    Optional<PlayerPlaceholderDataGenerator<?>> getGeneratorByIdentifier(String identifier);
+    Optional<PlayerPlaceholderDataGenerator<?>> getGeneratorByPlaceholder(String placeholder);
 
     Map<String, PlayerPlaceholderDataGenerator<?>> getGenerators();
 }

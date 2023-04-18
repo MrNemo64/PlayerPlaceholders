@@ -11,6 +11,6 @@ public interface PlayerPlaceholderDataGenerator<T extends PlayerPlaceholderDataE
 
     Optional<? extends T> createFor(UUID playerUUID);
 
-    String identifier();
+    PlayerPlaceholderDataKey key();
 
 }
